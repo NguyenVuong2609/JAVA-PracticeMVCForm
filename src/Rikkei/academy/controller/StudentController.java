@@ -22,4 +22,7 @@ public class StudentController {
     public void deleteStudent(int id){
         studentService.deleteById(id);
     }
+    public Student findStudentById(int id) {
+        return studentService.findById(id);
+    }
 }

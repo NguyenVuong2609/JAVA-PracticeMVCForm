@@ -53,12 +53,16 @@ public class StudentView {
         System.out.println(studentList);
         System.out.println("Enter the Student's ID that you want to edit: ");
         int id = Integer.parseInt(Config.scanner().nextLine());
-        System.out.println("Enter new name: ");
-        String newName = Config.scanner().nextLine();
-        System.out.println("Enter new age: ");
-        int newAge = Integer.parseInt(Config.scanner().nextLine());
-        studentController.updateStudent(new Student(id, newName, newAge));
-        System.out.println("Update success!");
+        if (studentController.findStudentById(id) != null) {
+            System.out.println("Enter new name: ");
+            String newName = Config.scanner().nextLine();
+            System.out.println("Enter new age: ");
+            int newAge = Integer.parseInt(Config.scanner().nextLine());
+            studentController.updateStudent(new Student(id, newName, newAge));
+            System.out.println("Update success!");
+        } else {
+            System.out.println("This ID does not exist");
+        }
         System.out.println("Enter any key to exit or type -back- to come back Menu");
         String backMenu = Config.scanner().nextLine();
         if (backMenu.equalsIgnoreCase("back")) {
@@ -67,19 +71,14 @@ public class StudentView {
     }
 
     public void deleteStudentForm() {
-        List<Student> studentList = studentController.showListStudent();
-        boolean checkId = true;
         System.out.println("Enter a Id that you want to delete: ");
-        int updateId = Integer.parseInt(Config.scanner().nextLine());
-        for (int i = 0; i < studentList.size(); i++) {
-            if (studentList.get(i).getId() == updateId) {
-                studentController.deleteStudent(updateId);
-                System.out.println("Delete Success!");
-                checkId = false;
-            }
-        }
-        if (checkId)
+        int deleteId = Integer.parseInt(Config.scanner().nextLine());
+        if (studentController.findStudentById(deleteId) != null) {
+            studentController.deleteStudent(deleteId);
+            System.out.println("Delete Success!");
+        } else {
             System.out.println("This ID does not exist");
+        }
         System.out.println("Enter any key to exit or type -back- to come back Menu");
         String backMenu = Config.scanner().nextLine();
         if (backMenu.equalsIgnoreCase("back")) {

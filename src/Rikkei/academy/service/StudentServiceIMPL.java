@@ -20,15 +20,12 @@ public class StudentServiceIMPL implements IStudentService {
 
     @Override
     public void save(Student student) {
-        boolean checkId = false;
-        for (int i = 0; i < studentList.size(); i++) {
-            if (studentList.get(i).getId() == student.getId()) {
-                studentList.set(i, student);
-                checkId = true;
-            }
-        }
-        if (!checkId)
+        if (findById(student.getId())!=null){
+            int index = studentList.indexOf(findById(student.getId()));
+            studentList.set(index,student);
+        } else {
             studentList.add(student);
+        }
     }
 
     @Override

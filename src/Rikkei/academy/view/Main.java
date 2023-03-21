@@ -10,6 +10,7 @@ public class Main {
         System.out.println("3. Update Student");
         System.out.println("4. Delete Student");
         System.out.println("5. Sort Student By Name");
+        System.out.println("6. Exit");
         System.out.println("Please Enter Your Choice");
         int choice = Integer.parseInt(Config.scanner().nextLine());
         switch (choice) {
@@ -25,6 +26,8 @@ public class Main {
             case 4:
                 new StudentView().deleteStudentForm();
                 break;
+            case 6:
+                System.exit(0);
         }
     }
 
