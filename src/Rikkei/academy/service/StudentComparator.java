@@ -1,4 +1,4 @@
-package Rikkei.academy.comparator;
+package Rikkei.academy.service;
 
 import Rikkei.academy.model.Student;
 

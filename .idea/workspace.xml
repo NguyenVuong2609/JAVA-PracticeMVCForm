@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd351b08-011e-48d5-9e41-0ef7d05643e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Rikkei/academy/comparator/StudentComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rikkei/academy/service/StudentServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rikkei/academy/service/StudentServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rikkei/academy/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rikkei/academy/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rikkei/academy/view/StudentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rikkei/academy/view/StudentView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
       <workItem from="1679372776386" duration="2110000" />
       <workItem from="1679384701095" duration="66000" />
       <workItem from="1679384791749" duration="4539000" />
-      <workItem from="1679449516700" duration="3334000" />
+      <workItem from="1679449516700" duration="4403000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 package Rikkei.academy.view;
 
-import Rikkei.academy.comparator.StudentComparator;
+import Rikkei.academy.service.StudentComparator;
 import Rikkei.academy.config.Config;
 import Rikkei.academy.controller.StudentController;
 import Rikkei.academy.model.Student;
