@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd351b08-011e-48d5-9e41-0ef7d05643e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Rikkei/academy/comparator/StudentComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rikkei/academy/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rikkei/academy/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rikkei/academy/service/StudentServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rikkei/academy/service/StudentServiceIMPL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rikkei/academy/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rikkei/academy/view/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Rikkei/academy/view/StudentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rikkei/academy/view/StudentView.java" afterDir="false" />
@@ -33,20 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Java/PracticeMVCForm",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/PracticeMVCForm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Rikkei.academy.view.Main" />
@@ -76,11 +77,18 @@
       <option name="presentableId" value="Default" />
       <updated>1679364606121</updated>
       <workItem from="1679364606731" duration="7379000" />
-      <workItem from="1679372776386" duration="1578000" />
+      <workItem from="1679372776386" duration="2110000" />
+      <workItem from="1679384701095" duration="66000" />
+      <workItem from="1679384791749" duration="4539000" />
+      <workItem from="1679449516700" duration="3334000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

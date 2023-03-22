@@ -11,6 +11,7 @@ public class StudentServiceIMPL implements IStudentService {
     static {
         studentList.add(new Student(1, "Van", 10));
         studentList.add(new Student(2, "Yen", 15));
+        studentList.add(new Student(3,"Chuan",20));
     }
 
     @Override

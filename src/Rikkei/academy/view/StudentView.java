@@ -1,9 +1,11 @@
 package Rikkei.academy.view;
 
+import Rikkei.academy.comparator.StudentComparator;
 import Rikkei.academy.config.Config;
 import Rikkei.academy.controller.StudentController;
 import Rikkei.academy.model.Student;
 
+import java.util.Collections;
 import java.util.List;
 
 public class StudentView {
@@ -28,7 +30,7 @@ public class StudentView {
             List<Student> studentList = studentController.showListStudent();
             int id;
             if (studentList.size() > 0) {
-                id = studentList.get(studentList.size() - 1).getId() + 1;
+                id = findMaxId() + 1;
             } else {
                 id = 1;
             }
@@ -84,5 +86,28 @@ public class StudentView {
         if (backMenu.equalsIgnoreCase("back")) {
             new Main();
         }
+    }
+
+    public void sortStudentByName(){
+        StudentComparator studentComparator = new StudentComparator();
+        List<Student> studentList = studentController.showListStudent();
+        Collections.sort(studentList,studentComparator);
+        System.out.println("Sort success!");
+        System.out.println("Enter any key to exit or type -back- to come back Menu");
+        String backMenu = Config.scanner().nextLine();
+        if (backMenu.equalsIgnoreCase("back")) {
+            new Main();
+        }
+    }
+
+    public int findMaxId(){
+        List<Student> studentList = studentController.showListStudent();
+        int max = studentList.get(0).getId();
+        for (int i = 1; i < studentList.size(); i++) {
+            if (max < studentList.get(i).getId()){
+                max = studentList.get(i).getId();
+            }
+        }
+        return max;
     }
 }

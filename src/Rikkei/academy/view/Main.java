@@ -2,6 +2,7 @@ package Rikkei.academy.view;
 
 import Rikkei.academy.config.Config;
 
+
 public class Main {
     public Main() {
         System.out.println("*************************STUDENT MANAGEMENT*****************************");
@@ -25,6 +26,9 @@ public class Main {
                 break;
             case 4:
                 new StudentView().deleteStudentForm();
+                break;
+            case 5:
+                new StudentView().sortStudentByName();
                 break;
             case 6:
                 System.exit(0);
